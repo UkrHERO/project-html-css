@@ -3,6 +3,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    background-color: $hero-bg-color;
+  }
+
+  &__mob-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    outline: 1px solid green;
+
+    @media screen and (min-width: 1280px) {
+      width: inherit;
+      max-width: 100%;
+    }
+  }
+
+  &__menu-btn {
+    cursor: pointer;
+    width: 20px;
+    height: 16px;
+    background-color: transparent;
+
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
   }
 
   &__logo {
@@ -16,7 +43,6 @@
     width: 20px;
     height: 1px;
     background-color: $title-color;
-    cursor: pointer;
 
     &::before {
       content: '';
@@ -36,6 +62,50 @@
       width: 20px;
       height: 1px;
       background-color: $title-color;
+    }
+  }
+
+  &__btn {
+    display: none;
+    margin-left: 30px;
+    min-width: 160px;
+    height: 44px;
+
+    @media screen and (min-width: 768px) {
+      display: inherit;
+    }
+
+    @media screen and (min-width: 1280px) {
+      display: inherit;
+      margin-left: 0;
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    @media screen and (min-width: 1280px) {
+      display: inherit;
+    }
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 35px;
+  }
+
+  &__link {
+    font-family: inherit;
+    @include font(16px, 0, 700);
+
+    color: $white;
+
+    &:hover,
+    &:focus {
+      color: $title-color;
     }
   }
 }
