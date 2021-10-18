@@ -1,0 +1,41 @@
+.contact-cont__list {
+  margin: 0 auto;
+  padding: 43px 20px;
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.contact-cont__link {
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  &:nth-child(2) {
+    border-bottom: 1px solid #e1e1e1;
+  }
+  &:nth-child(3) {
+    border-bottom: 1px solid #e1e1e1;
+  }
+}
+.contact-cont__text-cafe {
+  display: inline-block;
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background: #f0d1a5;
+  border-radius: 4px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
