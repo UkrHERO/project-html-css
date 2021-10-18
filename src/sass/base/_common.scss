@@ -1,0 +1,46 @@
+@mixin font($fs, $ls, $fw) {
+  font-size: $fs;
+  letter-spacing: $ls;
+  font-weight: $fw;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  color: $primary-text-color;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+
+  width: 1050px;
+}
+
+.title {
+  font-family: 'Titan One', cursive;
+  @include font(34px, 0.04em, 400);
+  line-height: calc(38.93 / 34);
+
+  @media (min-width: 768px) {
+    font-size: 48px;
+  }
+
+  @media (min-width: 1280px) {
+    @include font(58px, 0.06em, 400);
+  }
+}
+
+.upper-title {
+  font-family: 'Titan One', cursive;
+  @include font(18px, 0, 400);
+  line-height: calc(20.61 / 18);
+
+  @media (min-width: 768px) {
+    font-size: 26px;
+  }
+
+  @media (min-width: 1280px) {
+    @include font(30px, 0.04em, 400);
+  }
+}
