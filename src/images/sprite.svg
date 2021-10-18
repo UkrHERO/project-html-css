@@ -12,8 +12,8 @@
 <symbol id="menu-close-icon" viewBox="0 0 32 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.52 2l26.96 28M2 29.48l28-26.96"></path>
 </symbol>
-<symbol id="menu-open-icon" viewBox="0 0 32 32">
-<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M0 6.4h32M0 16h32M0 25.6h32"></path>
+<symbol id="menu-open-icon" viewBox="0 0 20 14">
+  <path d="M0 1h20M0 7h20M0 13h20" stroke="#D41443"/>
 </symbol>
 </defs>
 </svg>
