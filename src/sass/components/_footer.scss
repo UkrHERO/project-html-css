@@ -1,0 +1,19 @@
+.footer {
+  background-color: $section-bg-color;
+
+  &__title {
+    text-transform: uppercase;
+
+    &_pink {
+      color: $upper-title;
+    }
+
+    &_red {
+      color: $title-color;
+    }
+  }
+
+  &-social {
+    display: flex;
+  }
+}

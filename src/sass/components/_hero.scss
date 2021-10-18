@@ -2,6 +2,7 @@
   background-color: $hero-bg-color;
 
   &__title {
+    margin-bottom: 19px;
     display: flex;
     flex-direction: column;
     font-size: 37px;
@@ -14,18 +15,33 @@
     color: $white;
   }
 
-  &_button-box {
+  &__button-box {
     display: flex;
+
+    outline: 1px solid greenyellow;
   }
 
   &__btn {
+    padding: 9px 15px 9px 15px;
     // max-width: 100%;
     height: 24px;
     @include font(8px, 0, 400);
     line-height: calc(10.42 / 8);
-  }
 
-  &__btn--darck {
+    & + & {
+      margin-left: 8px;
+    }
+
+    &--dark {
+      color: $white;
+      background-color: $title-color;
+
+      &:hover,
+      &:focus {
+        color: $title-color;
+        background-color: $white;
+      }
+    }
   }
 
   //   &__circle-bg {
