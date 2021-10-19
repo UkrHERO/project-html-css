@@ -77,6 +77,9 @@
     min-width: 164px;
     height: 44px;
 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
     &:focus {
       color: $title-color;
@@ -112,8 +115,9 @@
   &__link {
     font-family: inherit;
     @include font(16px, 0, 700);
-
     color: $white;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -123,7 +127,6 @@
 }
 
 .mob-menu {
-  //   display: none;
   padding-top: 60px;
   position: fixed;
   z-index: 30;
@@ -135,6 +138,14 @@
   background-color: $mob-menu-bg-color;
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 800px) {
+    width: calc(100% / 3);
+  }
+
+  @media screen and (min-width: 950px) {
+    width: calc(100% / 2.7);
+  }
 
   &__close {
     position: absolute;
@@ -171,17 +182,6 @@
     &:focus {
       background-color: #ecebeb;
     }
-
-    // & .btn__arrow {
-    //   color: $title-color;
-    //   background-color: $title-color;
-
-    //   &:hover,
-    //   &:focus {
-    //     color: $title-color;
-    //     background-color: $title-color;
-    //   }
-    // }
   }
 
   &__item {
@@ -198,6 +198,8 @@
     @include font(14px, 0, 700);
     line-height: calc(18.23 / 14);
     color: $white;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
