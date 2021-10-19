@@ -1,6 +1,17 @@
 .hero {
   background-color: $hero-bg-color;
 
+  &__container {
+    padding-top: 192px;
+    padding-bottom: 160px;
+
+    background-image: url('../images/hero/sundae-1x-phone.png'),
+      url('../images/hero/ellipse-1x-phone.png');
+
+    background-repeat: no-repeat;
+    background-position: bottom right 32px, right;
+  }
+
   &__title {
     margin-bottom: 19px;
     display: flex;
@@ -44,10 +55,39 @@
     }
   }
 
+  &__point {
+    display: flex;
+    flex-direction: column;
+    @include font(8px, 0, 400);
+    line-height: calc(10.42 / 8);
+    color: $white;
+
+    & > span {
+      font-family: 'Titan One', cursive;
+      @include font(28px, 0.04em, 400);
+      color: $title-color;
+    }
+
+    &:after {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: $white;
+    }
+  }
+
   //   &__circle-bg {
   //     width: 344px;
   //     height: 344px;
   //     border-radius: 50%;
   //     background-color: $upper-title;
   //   }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__container {
+    background-image: url(../images/hero/sundae-2x-phone.png);
+
+    background-size: 143px;
+  }
 }
