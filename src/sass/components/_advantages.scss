@@ -42,13 +42,26 @@
     flex-direction: column;
 
     font-family: DM Sans;
+    font-weight: 700;
     font-size: 12px;
     line-height: (20/12);
 
     color: $primary-text-color;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+    }
   }
   &-text::before {
     margin-bottom: 16px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 36px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 40px;
+    }
   }
   &-text-milk::before {
     content: '';
@@ -59,6 +72,7 @@
     background-repeat: no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/about/icon1-2x.png);
+      background-size: contain;
     }
   }
 
@@ -71,6 +85,7 @@
     background-repeat: no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/about/icon2-2x.png);
+      background-size: contain;
     }
   }
   &-text-hurt::before {
@@ -82,6 +97,7 @@
     background-repeat: no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/about/icon3-2x.png);
+      background-size: contain;
     }
   }
   &-list {
