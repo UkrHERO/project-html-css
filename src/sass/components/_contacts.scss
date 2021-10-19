@@ -5,6 +5,7 @@
 }
 
 .contact-cont__list {
+  max-width: 220px;
   margin: 0 auto;
   padding: 43px 20px;
   background: #ffffff;
@@ -120,6 +121,7 @@
     margin-bottom: 81px;
   }
   .contact-cont__list {
+    max-width: 220px;
     padding: 50px 31px;
     &:nth-last-child(1) {
       margin-bottom: 0;
@@ -253,7 +255,10 @@
     font-size: 16px;
     line-height: calc(30 / 16);
   }
-
+  .contact-cont__text-head-item {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
   .contact-cont__text-day {
     font-size: 16px;
     line-height: calc(30 / 16);
