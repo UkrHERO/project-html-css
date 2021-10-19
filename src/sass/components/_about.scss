@@ -69,6 +69,10 @@
       margin-right: 17px;
       margin-bottom: 0;
     }
+
+    @media screen and (min-width: 1280px){
+      margin-right: 74px;
+    }
   }
 
   &__image{
