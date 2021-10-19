@@ -22,12 +22,12 @@
   &:nth-child(2) {
     margin-top: 25px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: 1px solid $costumer-bg-color;
   }
   &:nth-child(3) {
     margin-top: 25px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: 1px solid $costumer-bg-color;
   }
   &:nth-child(4) {
     margin-top: 25px;
@@ -235,19 +235,19 @@
     }
   }
 
-  // .contact-cont__link {
-  //   &:nth-child(2) {
-  //     margin-top: 32px;
-  //     padding-bottom: 32px;
-  //   }
-  //   &:nth-child(3) {
-  //     margin-top: 32px;
-  //     padding-bottom: 32px;
-  //   }
-  //   &:nth-child(4) {
-  //     margin-top: 32px;
-  //   }
-  // }
+  .contact-cont__link {
+    &:nth-child(2) {
+      margin-top: 32px;
+      padding-bottom: 32px;
+    }
+    &:nth-child(3) {
+      margin-top: 32px;
+      padding-bottom: 32px;
+    }
+    &:nth-child(4) {
+      margin-top: 32px;
+    }
+  }
   .contact-cont__text-head {
     margin-bottom: 10px;
     font-size: 16px;
