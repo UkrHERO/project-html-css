@@ -1,54 +1,83 @@
-.products-section{
+.products__section {
    margin-top: 121px;
    margin-bottom: 15px;
    text-align: center;
 }
-.products-title-text{
+.products__title-text{
 font-weight: normal;
 text-transform: uppercase;
 margin-bottom: 15px;
-color: $upper-title;
+color:#ffa5ba;
 }
-.products-title {
-   margin-bottom: 31px;
+.products__title {
+margin-bottom: 131px;
 text-transform: uppercase;
 color: $title-color;
 }
-.products__block{
-   
+
+.products__list {
   
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+   }
+ 
 }
+   
 .products__list {
    text-align: center;
-   padding-bottom: 98px;
-   
+   padding-bottom: 98px;  
 }
 
-.products__item {
-   width: 280px;
+.products__item {  
+   width: 100%;
+   max-width: 280px;
+   text-align: center;
    border-radius: 24px;
    padding-left: 40px;
    padding-right: 40px;
    padding-bottom: 40px;
+   padding-top: 113px;
    margin-bottom: 17px;
-
-   
+   position: relative;
+   @media screen and (min-width: 768px) {
+   max-width: 220px;
+   margin-left: 20px;
+   &:first-child{
+      margin-left: 0;
+   }
+}
+   @media screen and (min-width: 1080px) {
+    max-width: 335px;
+    margin-left: 23px;
+    &:first-child{
+      margin-left: 0;  
+}
+}
    &--pink{
       background-color: $hero-bg-color;
- 
+      margin-bottom: 140px;
    }
    &--brown{
     background-color: $card-bg-creem;
+    margin-bottom: 140px;
    }
    &--green{
       background-color: $card-bg-green; 
-      margin-bottom: -17px;
+      margin-bottom: 133px;
    }
 }
 .products__img{
-   margin-bottom: -113px;
+   position: absolute;
+   min-width: 100%;
+   bottom: 75%;
+   left: 0;
 }
 .products__card-title {
+position: relative;
 margin-top: 22px;
 font-weight: normal;
 font-size: 20px;
@@ -58,7 +87,7 @@ text-transform: uppercase;
 color: $white;
 }
 .products__card-text {
- margin-top: 30px;
+ margin-top: 60px;
  margin-bottom: 30px;
 font-family: DM Sans;
 font-style: normal;
@@ -69,3 +98,17 @@ letter-spacing: 0.04em;
 color: $white;
 }
 
+.products__card-title::after{
+   display: block;
+   content: " . . .";
+   position: absolute;
+   width: -webkit-fill-available;
+   top: 30px;
+   background-position: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+.products__hend{
+   border-radius: 50%;
+   margin-bottom: 41px;
+} 
