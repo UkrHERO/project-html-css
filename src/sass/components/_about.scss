@@ -1,0 +1,138 @@
+.about{
+  position: relative;
+  padding: 125px 0 39px 0;
+
+  background-image: url(../images/about/about-banner-1x-photo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0% 82%;
+  background-color: #FFF5F6;
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+    background-image: url(../images/about/about-banner-2x-photo.png);
+  }
+
+  @media screen and (min-width: 768px){
+    background-image: none;
+    padding: 130px 0 66px 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 125px 0 39px 0;
+    background-image: url(../images/about/about-banner-2x-photo.png);
+    background-position: 0% 110%;
+  }
+
+  &__upper-title{
+    margin-bottom: 15px;
+
+    color: $upper-title;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__title{
+    margin-bottom: 26px;
+
+    text-transform: uppercase;
+    text-align: center;
+    color: $title-color;
+
+    @media screen and (min-width: 768px){
+      margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: 1280px){
+      margin-bottom: 55px;
+    }
+  }
+
+  &__content{
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &__cover{
+    margin-bottom: 46px;
+
+    @media screen and (min-width: 480px) {
+      display: flex;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 768px){
+      
+      align-items: flex-start;
+      margin-right: 17px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__image{
+    display: block;
+
+    @media screen and (min-width: 768px) {
+      width: 340px;
+    }
+
+    @media screen and (min-width: 1280px){
+      width: 516px;
+    }
+  }
+
+  &__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 768px){
+      padding-top: 50px;
+    }
+
+    @media screen and (min-width: 1280px){
+      align-items: flex-start;
+    }
+  }
+
+  &__paragraf{
+    font-size: 12px;
+    line-height: calc(19 / 12);
+
+    &:nth-child(2n){
+      margin-top: 47px;
+      margin-bottom: 17px;
+
+      color: $secondary-text-color;
+
+      @media screen and (min-width: 768px){
+        margin-bottom: 62px;
+      }
+
+      @media screen and (min-width: 1280px){
+        margin-top: 35px;
+        margin-bottom: 45px;
+      }
+    }
+
+    @media screen and (max-width: 479px) {
+      width: 220px;
+    }
+
+    &--span{
+      display: block;
+      margin-top: 20px;
+
+      @media screen and (min-width: 1280px){
+        margin-top: 35px;
+      }
+    }
+
+    @media screen and (min-width: 768px){
+      font-size: 14px;
+      line-height: calc(25 / 14);
+    }
+  }
+}
