@@ -1,0 +1,17 @@
+.section-gallery {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 60%, rgba(255, 245, 246, 1) 60%);
+}
+
+.gallery {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 320px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+}
