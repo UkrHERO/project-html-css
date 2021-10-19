@@ -1,7 +1,15 @@
 .products__section {
-   margin-top: 121px;
-   margin-bottom: 15px;
-   text-align: center;
+  padding-top: 121px;
+  padding-bottom: 98px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+   padding-top: 122px;
+   padding-bottom: 112px;
+   }
+   @media screen and (min-width: 1280px) {
+      padding-top: 127px;
+      padding-bottom: 119px;
+    }
 }
 .products__title-text{
 font-weight: normal;
@@ -10,11 +18,18 @@ margin-bottom: 15px;
 color:#ffa5ba;
 }
 .products__title {
-margin-bottom: 131px;
+margin-bottom: 140px;
 text-transform: uppercase;
 color: $title-color;
+
+@media screen and (min-width: 768px) {
+   margin-bottom: 160px;
+}
+@media screen and (min-width: 1280px) {
+   margin-bottom: 200px;
 }
 
+}
 .products__list {
   
    display: flex;
@@ -26,11 +41,6 @@ color: $title-color;
    }
  
 }
-   
-.products__list {
-   text-align: center;
-   padding-bottom: 98px;  
-}
 
 .products__item {  
    width: 100%;
@@ -41,13 +51,14 @@ color: $title-color;
    padding-right: 40px;
    padding-bottom: 40px;
    padding-top: 113px;
-   margin-bottom: 17px;
+   
    position: relative;
    @media screen and (min-width: 768px) {
    max-width: 220px;
    margin-left: 20px;
    &:first-child{
       margin-left: 0;
+      margin-bottom: 0;
    }
 }
    @media screen and (min-width: 1080px) {
@@ -59,15 +70,20 @@ color: $title-color;
 }
    &--pink{
       background-color: $hero-bg-color;
-      margin-bottom: 140px;
+     margin-bottom: 140px;
+     @media screen and (min-width:768px){
+     margin-bottom: 0px;  
+     }
    }
    &--brown{
     background-color: $card-bg-creem;
     margin-bottom: 140px;
+    @media screen and (min-width:768px){
+      margin-bottom: 0px;  
+      }
    }
    &--green{
       background-color: $card-bg-green; 
-      margin-bottom: 133px;
    }
 }
 .products__img{
