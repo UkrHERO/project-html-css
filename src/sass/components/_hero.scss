@@ -15,7 +15,7 @@
       padding-bottom: 0px;
       background-image: url('../images/hero/sundae-1x-tablet.png'),
         url('../images/hero/ellipse-1x-tablet.png');
-      background-position: bottom right 227px, bottom 46px right 118px;
+      background-position: bottom right 227px, bottom 46px right 133px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -31,14 +31,30 @@
     margin-bottom: 19px;
     display: flex;
     flex-direction: column;
-    font-size: 37px;
+    font-size: 48px;
     line-height: calc(42.37 / 37);
+
+    @media screen and (min-width: 768px) {
+      font-size: 34px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
+    }
   }
 
   &__upper-title {
     @include font(26px, 0.04em, 400);
     line-height: calc(29.77 / 26);
     color: $white;
+
+    @media screen and (min-width: 768px) {
+      font-size: 22px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 38px;
+    }
   }
 
   &__top-line {
@@ -59,8 +75,6 @@
     display: flex;
     align-items: center;
 
-    outline: 1px solid green;
-
     @media screen and (min-width: 1280px) {
       margin-left: -38px;
     }
@@ -76,10 +90,6 @@
     @media screen and (min-width: 1280px) {
       font-size: 14px;
       width: 200px;
-    }
-
-    &-wrapper {
-      outline: 1px solid blue;
     }
   }
 
@@ -100,8 +110,6 @@
     margin-bottom: 19px;
     display: flex;
 
-    outline: 1px solid greenyellow;
-
     @media screen and (min-width: 1280px) {
       margin-bottom: 56px;
     }
@@ -109,7 +117,6 @@
 
   &__btn {
     padding: 9px 15px 9px 15px;
-    // max-width: 100%;
     height: 24px;
     @include font(8px, 0, 400);
     line-height: calc(10.42 / 8);
@@ -144,19 +151,25 @@
   }
 
   &__point {
+    margin-right: 10px;
     display: none;
     position: relative;
     flex-direction: column;
-    @include font(14px, 0, 400);
+    @include font(8px, 0, 400);
     line-height: calc(10.42 / 8);
     color: $white;
+    text-align: right;
+
+    & + & {
+      margin-top: 13px;
+    }
 
     @media screen and (min-width: 768px) {
       display: flex;
     }
 
     @media screen and (min-width: 1280px) {
-      margin-right: -18px;
+      margin-right: 0;
       font-size: 14px;
     }
 
@@ -166,6 +179,7 @@
       font-family: 'Titan One', cursive;
       @include font(28px, 0.04em, 400);
       color: $title-color;
+      //   text-align: left;
 
       @media screen and (min-width: 1280px) {
         font-size: 46px;
@@ -174,8 +188,8 @@
 
     &:after {
       position: absolute;
-      left: 28px;
-      top: 0;
+      left: 35px;
+      top: -1;
       content: '';
       width: 16px;
       height: 16px;
@@ -185,7 +199,7 @@
       @media screen and (min-width: 1280px) {
         width: 30px;
         height: 30px;
-        left: 42px;
+        left: 60px;
       }
     }
   }
@@ -203,20 +217,20 @@
     background-image: url(../images/hero/sundae-2x-phone.png),
       url(../images/hero/ellipse-2x-phone.png);
 
-    background-size: 171px;
+    background-size: 171px, 346px;
 
     @media screen and (min-width: 768px) {
       background-image: url(../images/hero/sundae-2x-tablet.png),
         url(../images/hero/ellipse-2x-tablet.png);
 
-      background-size: 143px;
+      background-size: 143px, 324px;
     }
 
     @media screen and (min-width: 1280px) {
       background-image: url(../images/hero/sundae-2x-desktop.png),
         url(../images/hero/ellipse-2x-desktop.png);
 
-      background-size: 143px;
+      background-size: 236px, 538px;
     }
   }
 }

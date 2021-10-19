@@ -1,4 +1,4 @@
-.btn{
+.btn {
   position: relative;
   display: flex;
   align-items: center;
@@ -14,65 +14,62 @@
   font-weight: 700;
 
   background-color: $white;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover{
+  &:hover {
     color: $white;
     background-color: $btn-color;
 
-    .btn__arrow{
+    .btn__arrow {
       &::before,
-      &::after{
+      &::after {
         background-color: $white;
       }
     }
   }
 
-  &__arrow{
+  &__arrow {
     position: relative;
     &::before,
-    &::after{
-      content: "";
+    &::after {
+      content: '';
       position: absolute;
       width: 8px;
       height: 2px;
       border-radius: 20px;
       background-color: $btn-color;
     }
-    
-    &::before{
+
+    &::before {
       bottom: 1px;
       right: -20px;
       transform: rotate(40deg);
     }
 
-    &::after{
+    &::after {
       top: 1px;
       right: -20px;
       transform: rotate(-40deg);
     }
   }
 
-  
-
-  &--active{
+  &--active {
     color: $white;
     background-color: $btn-color;
 
     .btn__arrow::before,
-    .btn__arrow::after{
+    .btn__arrow::after {
       background-color: $white;
     }
 
-    &:hover{
+    &:hover {
       color: $btn-color;
       background-color: $white;
       border-color: $btn-color;
 
       .btn__arrow::before,
-      .btn__arrow::after{
+      .btn__arrow::after {
         background-color: $btn-color;
       }
     }

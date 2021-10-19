@@ -1,5 +1,42 @@
 <header class="header">
     <div class=" header__container container">
+        <div id="mob-menu" class="mob-menu js-menu-container">
+            <button aria-expanded="fals" aria-controls="mob-menu" class="mob-menu__btn-close js-close-menu">
+                <div class="mob-menu__close"></div>
+            </button>
+            <button class="mob-menu__btn header__btn btn">
+                Buy now
+                <span class="btn__arrow"></span>
+            </button>
+            <ul class="mob-menu__list">
+                <li class="mob-menu__item">
+                    <a href="" class="mob-menu__link">
+                        Home
+                    </a>
+                </li>
+                <li class="mob-menu__item">
+                    <a href="" class="mob-menu__link">
+                        About us
+                    </a>
+                </li>
+                <li class="mob-menu__item">
+                    <a href="" class="mob-menu__link">
+                        How it’s made?
+                    </a>
+                </li>
+                <li class="mob-menu__item">
+                    <a href="" class="mob-menu__link">
+                        Our products
+                    </a>
+                </li>
+                <li class="mob-menu__item">
+                    <a href="" class="mob-menu__link">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+        </div>
         <div class="header__mob-head">
             <a href="./index.html">
                 <picture class="header__logo">
@@ -8,7 +45,7 @@
                     <img src="./images/header/logo-1x-desktop.png" alt="logo">
                 </picture>
             </a>
-            <button class="header__menu-btn">
+            <button class="header__menu-btn js-open-menu">
                 <div class="header__menu-icon">
                 </div>
             </button>
@@ -16,12 +53,12 @@
         <nav class="header__nav">
             <ul class="header__list">
                 <li class="header__item">
-                    <a href="" class="header__link">
+                    <a href="./index.html" class="header__link">
                         Home
                     </a>
                 </li>
                 <li class="header__item">
-                    <a href="" class="header__link">
+                    <a href="#about" class="header__link">
                         About us
                     </a>
                 </li>
@@ -36,7 +73,7 @@
                     </a>
                 </li>
                 <li class="header__item">
-                    <a href="" class="header__link">
+                    <a href="#contacts" class="header__link">
                         Contact
                     </a>
                 </li>
