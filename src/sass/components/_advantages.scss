@@ -1,0 +1,92 @@
+.advantages {
+  background-color: $section-bg-color;
+  padding-top: 39px;
+  padding-bottom: 97px;
+  @media screen and (min-width: 768px) {
+    padding-top: 66px;
+    padding-bottom: 140px;
+  }
+  &-numbers {
+    width: 98px;
+    height: 56px;
+
+    font-family: Titan One;
+    font-size: 36px;
+    line-height: (41/36);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $title-color;
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+      line-height: (55/48);
+      margin-bottom: 16px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
+      line-height: (66/58);
+      margin-bottom: 16px;
+    }
+  }
+  &-option {
+    margin-bottom: 38px;
+    @media screen and (min-width: 768px) {
+      margin-left: 60px;
+    }
+    @media screen and (min-width: 1280px) {
+      flex-basis: calc((100% - 30px * 3) / 3);
+    }
+  }
+  &-text {
+    display: flex;
+    flex-direction: column;
+
+    font-family: DM Sans;
+    font-size: 12px;
+    line-height: (20/12);
+
+    color: $primary-text-color;
+  }
+  &-text::before {
+    margin-bottom: 16px;
+  }
+  &-text-milk::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-image: url(../images/about/icon1-1x.png);
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/icon1-2x.png);
+    }
+  }
+
+  &-text-apple::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-image: url(../images/about/icon2-1x.png);
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/icon2-2x.png);
+    }
+  }
+  &-text-hurt::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-image: url(../images/about/icon3-1x.png);
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/icon3-2x.png);
+    }
+  }
+  &-list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+}
