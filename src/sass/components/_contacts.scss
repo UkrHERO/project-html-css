@@ -1,7 +1,7 @@
 .contact {
-  padding-bottom: 56px;
-  background: $section-bg-color;
-  //   background-image: linear-gradient:
+  padding-bottom: 110px;
+  // background: $section-bg-color;
+  background-image: linear-gradient(0deg, rgba(255, 245, 246, 1) 95%, rgba(255, 255, 255, 1) 95%);
 }
 
 .contact-cont__list {
@@ -60,7 +60,7 @@
   letter-spacing: 0.04em;
 }
 .contact-cont__text-head-item {
-  // max-width: 180px;
+  max-width: 180px;
   font-size: 12px;
   line-height: calc(18 / 12);
 
@@ -95,6 +95,9 @@
     width: 100%;
   }
 }
+.contact-button {
+  position: relative;
+}
 .contact-button__list {
   align-items: center;
 }
@@ -108,6 +111,10 @@
   }
 }
 @media screen and(min-width: 768px) {
+  .contact {
+    padding-bottom: 79px;
+    background-image: linear-gradient(0deg, rgba(255, 245, 246, 1) 89%, rgba(255, 255, 255, 1) 89%);
+  }
   .contact-cont {
     display: flex;
     margin-bottom: 81px;
@@ -190,19 +197,21 @@
 @media screen and(min-width: 1280px) {
   .contact {
     margin: 0 auto;
-    padding-bottom: 82px;
+    padding-bottom: 160px;
+    // background: $section-bg-color;
+    background-image: url('../images/contacts/contacts-1x-desktop.png'),
+      linear-gradient(0deg, rgba(255, 245, 246, 1) 88%, rgba(255, 255, 255, 1) 88%);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    // background: $section-bg-color;
-    background-image: url('../images/contacts/contacts-1x-desktop.png');
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .contact {
-      // background-repeat: no-repeat;
-      // background-size: contain;
-      // background-position: center;
-      background-image: url('../images/contacts/contacts-2x-desktop.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      background-image: url('../images/contacts/contacts-2x-desktop.png'),
+        linear-gradient(0deg, rgba(255, 245, 246, 1) 88%, rgba(255, 255, 255, 1) 88%);
     }
   }
 }
