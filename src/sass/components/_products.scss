@@ -1,0 +1,139 @@
+.products__section {
+  padding-top: 121px;
+  padding-bottom: 98px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+   padding-top: 122px;
+   padding-bottom: 112px;
+   }
+   @media screen and (min-width: 1280px) {
+      padding-top: 127px;
+      padding-bottom: 119px;
+    }
+}
+.products__title-text{
+font-weight: normal;
+text-transform: uppercase;
+margin-bottom: 15px;
+color:#ffa5ba;
+}
+.products__title {
+margin-bottom: 140px;
+text-transform: uppercase;
+color: $title-color;
+
+@media screen and (min-width: 768px) {
+   margin-bottom: 160px;
+}
+@media screen and (min-width: 1280px) {
+   margin-bottom: 200px;
+}
+
+}
+.products__list {
+  justify-content: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+   }
+ 
+}
+
+.products__item {  
+   width: 100%;
+   max-width: 280px;
+   text-align: center;
+   border-radius: 24px;
+   padding-left: 40px;
+   padding-right: 40px;
+   padding-bottom: 40px;
+   padding-top: 113px;
+   
+   position: relative;
+   @media screen and (min-width: 768px) {
+   max-width: 220px;
+   margin-left: 20px;
+   &:first-child{
+      margin-left: 0;
+      margin-bottom: 0;
+   }
+}
+   @media screen and (min-width: 1080px) {
+    max-width: 335px;
+    margin-left: 23px;
+    &:first-child{
+      margin-left: 0;  
+}
+}
+   &--pink{
+      background-color: $hero-bg-color;
+     margin-bottom: 140px;
+     @media screen and (min-width:768px){
+     margin-bottom: 0px;  
+     }
+   }
+   &--brown{
+    background-color: $card-bg-creem;
+    margin-bottom: 140px;
+    @media screen and (min-width:768px){
+      margin-bottom: 0px;  
+      }
+   }
+   &--green{
+      background-color: $card-bg-green; 
+   }
+}
+.products__img{
+   position: absolute;
+   min-width: 100%;
+   bottom: 75%;
+   left: 0;
+   @media screen and (min-width: 768px) and (max-width: 1279px){
+   bottom: 78%;   
+   }
+}
+.products__card-title {
+position: relative;
+margin-top: 22px;
+font-weight: normal;
+font-size: 20px;
+line-height: calc(23 / 20);
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: $white;
+@media screen and (min-width: 768px) {
+   margin-top: 30px;  
+}
+@media screen and (min-width: 1280px) {
+   margin-top: 38px;  
+}
+}
+.products__card-text {
+ margin-top: 60px;
+ margin-bottom: 30px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: $white;
+}
+
+.products__card-title::after{
+   display: block;
+   content: " . . .";
+   position: absolute;
+   width: -webkit-fill-available;
+   top: 30px;
+   background-position: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+.products__hend{
+   border-radius: 50%;
+   margin-bottom: 41px;
+} 
