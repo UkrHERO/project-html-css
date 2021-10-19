@@ -1,14 +1,4 @@
-.slick-dotted.slick-slider {
-  margin-bottom: 85px;
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    margin-bottom: 125px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 130px;
-  }
-}
-
-.container-reviews {
+.section-reviews {
   margin-top: 80px;
   margin-bottom: 85px;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -32,16 +22,16 @@
   background-color: #fafafa;
   max-width: 480px;
   margin-top: 30px;
-  padding: 43px 66px 26px 57px;
+  padding: 43px 50px 20px 50px;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     max-width: 620px;
-    padding: 41px 78px 40px 82px;
+    padding: 41px 34px 34px 42px;
     margin-top: 25px;
   }
   @media screen and (min-width: 1280px) {
     max-width: 926px;
-    padding: 47px 89px 39px 87px;
+    padding: 47px 54px 32px 50px;
     margin-top: 15px;
   }
 
@@ -52,14 +42,17 @@
     text-align: center;
     letter-spacing: 0.04em;
     z-index: 2;
+    padding: 0 16px 0 7px;
     background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 31px);
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       font-size: 14px;
+      padding: 0 44px 0 20px;
       line-height: 216%;
     }
     @media screen and (min-width: 1280px) {
       font-size: 16px;
       line-height: 186%;
+      padding: 0 35px 0 28px;
     }
   }
 
@@ -144,6 +137,11 @@
   }
 }
 
+.slick-dots li:not(:last-child) {
+  margin: 0;
+  margin-right: 18px;
+}
+
 .slick-dots li button:before {
   content: '';
   width: 12px;
@@ -162,4 +160,8 @@
   background-repeat: no-repeat;
   border-radius: 0;
   opacity: 1;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
 }
