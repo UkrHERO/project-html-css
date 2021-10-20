@@ -205,13 +205,13 @@
       linear-gradient(0deg, rgba(255, 245, 246, 1) 88%, rgba(255, 255, 255, 1) 88%);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position: 50% 25%;
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .contact {
       background-repeat: no-repeat;
       background-size: contain;
-      background-position: center;
+      background-position: 50% 25%;
       background-image: url('../images/contacts/contacts-2x-desktop.png'),
         linear-gradient(0deg, rgba(255, 245, 246, 1) 88%, rgba(255, 255, 255, 1) 88%);
     }
