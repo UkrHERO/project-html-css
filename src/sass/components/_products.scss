@@ -141,6 +141,7 @@ color: $white;
    margin-bottom: 41px;
    background-color:  $white;
    cursor: pointer;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .products__btn:hover,
 .products__btn:focus{
@@ -156,6 +157,8 @@ color: $white;
    top: 14px;
    left: 14px;
    transform: rotate(45deg);
+   transition: border-top 250ms cubic-bezier(0.4, 0, 0.2, 1),
+   border-right 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
    .products__btn:hover:before,
    .products__btn:focus:before {
