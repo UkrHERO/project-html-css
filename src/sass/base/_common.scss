@@ -36,6 +36,8 @@ body {
   font-family: 'Titan One', cursive;
   @include font(34px, 0.04em, 400);
   line-height: calc(38.93 / 34);
+  color: $title-color;
+  text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
@@ -50,6 +52,8 @@ body {
   font-family: 'Titan One', cursive;
   @include font(18px, 0, 400);
   line-height: calc(20.61 / 18);
+  color: $upper-title;
+  text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
     font-size: 26px;
