@@ -44,7 +44,6 @@ color: $title-color;
 
 .products__item {  
    width: 100%;
-   max-width: 280px;
    text-align: center;
    border-radius: 24px;
    padding-left: 40px;
@@ -123,7 +122,7 @@ letter-spacing: 0.04em;
 color: $white;
 }
 
-.products__card-title::after{
+.products__card-title::after {
    display: block;
    content: " . . .";
    position: absolute;
@@ -133,7 +132,34 @@ color: $white;
   margin-left: 0;
   margin-right: 0;
 }
-.products__hend{
+.products__btn {
+   position: relative;
+   width: 40px;
+   height: 40px;
    border-radius: 50%;
+   border: 2px solid transparent;
    margin-bottom: 41px;
-} 
+   background-color:  $white;
+   cursor: pointer;
+}
+.products__btn:hover,
+.products__btn:focus{
+   background-color:  #d41342;
+}
+.products__btn::before{
+   content: " ";
+   position: absolute;
+   width: 8px;
+   height: 8px;
+   border-top: 3px solid #d41342;
+   border-right: 3px solid #d41342;
+   top: 14px;
+   left: 14px;
+   transform: rotate(45deg);
+   }
+   .products__btn:hover:before,
+   .products__btn:focus:before {
+      border-top: 3px solid $white; 
+      border-right:3px solid $white;
+   }
+
