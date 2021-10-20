@@ -237,11 +237,6 @@
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__container {
-    background-image: url(../images/hero/sundae-2x-phone.png),
-      url(../images/hero/ellipse-2x-phone.png);
-
-    background-size: 171px, 346px;
-
     @media screen and (min-width: 768px) {
       background-image: url(../images/hero/sundae-2x-tablet.png),
         url(../images/hero/ellipse-2x-tablet.png);
@@ -254,6 +249,19 @@
         url(../images/hero/ellipse-2x-desktop.png);
 
       background-size: 236px, 538px;
+    }
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/sundae-2x-phone.png),
+      url(../images/hero/ellipse-2x-phone.png);
+
+    background-size: 171px, 346px;
+
+    @media screen and (min-width: 768px) {
+      background-image: none;
     }
   }
 }
