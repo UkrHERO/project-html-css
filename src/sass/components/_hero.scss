@@ -1,18 +1,24 @@
 .hero {
   background-color: $hero-bg-color;
 
+  background-image: url('../images/hero/sundae-1x-phone.png'),
+    url('../images/hero/ellipse-1x-phone.png');
+  background-repeat: no-repeat;
+  background-position: bottom right 32px, bottom 75px right -62px;
+
+  @media screen and (min-width: 768px) {
+    background-image: none;
+  }
+
   &__container {
     padding-top: 193px;
     padding-bottom: 160px;
-
-    background-image: url('../images/hero/sundae-1x-phone.png'),
-      url('../images/hero/ellipse-1x-phone.png');
     background-repeat: no-repeat;
-    background-position: bottom right 32px, bottom 75px right -62px;
 
     @media screen and (min-width: 768px) {
       padding-top: 102px;
       padding-bottom: 0px;
+
       background-image: url('../images/hero/sundae-1x-tablet.png'),
         url('../images/hero/ellipse-1x-tablet.png');
       background-position: bottom right 227px, bottom 46px right 133px;
@@ -106,6 +112,17 @@
     }
   }
 
+  &__girl::before {
+    content: '';
+    width: 80px;
+    height: 60px;
+    background-color: $title-color;
+  }
+
+  &__girl:hover,
+  &__girl:focus {
+  }
+
   &__button-box {
     margin-bottom: 19px;
     display: flex;
@@ -140,6 +157,8 @@
       &:hover,
       &:focus {
         background-color: $after-consumer-color;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(26, 2, 2, 0.14),
+          0px 1px 3px rgba(0, 0, 0, 0.12);
       }
     }
 
@@ -151,6 +170,8 @@
       &:focus {
         color: $title-color;
         background-color: #ecebeb;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(26, 2, 2, 0.14),
+          0px 1px 3px rgba(196, 196, 196, 0.12);
       }
     }
   }
@@ -187,6 +208,11 @@
 
       @media screen and (min-width: 1280px) {
         font-size: 46px;
+      }
+
+      &:hover,
+      &:focus {
+        text-shadow: 1px 1px $primary-text-color, 3px 3px 5px $white;
       }
     }
 
