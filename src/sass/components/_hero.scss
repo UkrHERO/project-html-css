@@ -100,27 +100,127 @@
   }
 
   &__milk-btn {
+    position: relative;
     cursor: pointer;
-  }
-
-  &__lilk-btn-img {
+    width: 18px;
+    height: 18px;
+    background-color: $white;
     border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 1280px) {
       width: 26px;
       height: 26px;
     }
+
+    &:hover,
+    &:focus {
+      transform: scale(1.15);
+      background-color: #d41342;
+    }
+
+    &:before {
+      content: ' ';
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-top: 2px solid #d41342;
+      border-right: 2px solid #d41342;
+      top: 7px;
+      left: 6px;
+      transform: rotate(45deg);
+      transition: border-top 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-right 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      @media screen and (min-width: 1280px) {
+        width: 7px;
+        height: 7px;
+        top: 9px;
+        left: 8px;
+      }
+    }
+
+    &:hover::before,
+    &:focus::before {
+      border-top: 2px solid $white;
+      border-right: 2px solid $white;
+    }
   }
 
-  &__girl::before {
-    content: '';
-    width: 80px;
-    height: 60px;
-    background-color: $title-color;
-  }
+  &__girl {
+    position: relative;
 
-  &__girl:hover,
-  &__girl:focus {
+    &:hover:before,
+    &:focus:before {
+      opacity: 1;
+    }
+
+    &::before {
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 12px;
+      top: 16px;
+      content: 'mmm ...';
+      width: 65px;
+      height: 35px;
+      background-color: $white;
+
+      font-family: 'Titan One', cursive;
+      @include font(13px, 0.04em, 400);
+      line-height: calc(38.93 / 34);
+      color: $title-color;
+      text-transform: uppercase;
+
+      transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      @media screen and (min-width: 1280px) {
+        left: 14px;
+        top: 33px;
+        width: 137px;
+        height: 50px;
+        font-size: 22px;
+      }
+    }
+
+    &:hover::after,
+    &:focus::after {
+      opacity: 1;
+    }
+
+    &::after {
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 12px;
+      top: 16px;
+      content: 'Yummy!';
+      width: 65px;
+      height: 35px;
+      background-color: $white;
+
+      font-family: 'Titan One', cursive;
+      @include font(13px, 0.04em, 400);
+      line-height: calc(38.93 / 34);
+      color: $title-color;
+      text-transform: uppercase;
+
+      transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1) 700ms;
+
+      @media screen and (min-width: 1280px) {
+        left: 14px;
+        top: 33px;
+        width: 137px;
+        height: 50px;
+        font-size: 22px;
+      }
+    }
   }
 
   &__button-box {
@@ -137,6 +237,7 @@
     height: 24px;
     @include font(8px, 0, 400);
     line-height: calc(10.42 / 8);
+    border: 1px solid transparent;
 
     @media screen and (min-width: 1280px) {
       padding: 13px 21px 13px 21px;
@@ -264,4 +365,8 @@
       background-image: none;
     }
   }
+}
+
+.hero__girl::before:hover {
+  opacity: 1;
 }
